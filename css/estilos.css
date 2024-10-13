@@ -1,14 +1,13 @@
 body {
     background-attachment:fixed;
-    background-color: antiquewhite;
+    background-color: #EE38CD;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../imagenes/descarga.jpeg)
+    background-image: url(../imagenes/paisaje1.jpg)
  }
- .antiquewhite {background-color: antiquewhite;}
- h1 {font-size: 100px;
-    display: flex;
-    justify-content: center;
+.TITULO{color: black;
+  text-decoration: underline;
+  font-size: 70px;
 }
  .messi {color: brown;
     text-decoration: underline;
@@ -30,12 +29,11 @@ body {
     font-size: 40px;
 
 }
-p{color: white;
+.info{color: white;
+  font-size: 36px;
     display: flex;
     justify-content: center;
-    background-color: #FF5733;
-
-}
+  background-color:  #F5ABE8;}
 li{color: black;
     display: flex;
     justify-content: center;
@@ -43,101 +41,108 @@ li{color: black;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-p {font-size: 36px;
-
-}
-img{height: 600px;
+img{height: 200px;
     display: flex;
     justify-content: center;
     border-radius: 30;
-
-
-}
-.imagen{color: brown;
-    font-size: 40px;
-    text-decoration: underline;}
+  }
     .video{color: brown;
         font-size: 40px;
         text-decoration: underline;}
-.mapa{color: brown;
-font-size: 40px;
-text-decoration: underline;}
 .audio{color: brown;
     font-size: 40px;
     text-decoration: underline;
-
 }
 h2{
 font-family: Arial, Helvetica, sans-serif;
 font-size:25px;
 
 }
-.potrerodigital{ color: azure;
-font-size: 30px;
-}
-.otrasrecetasdehattogu{
-    color: brown;
-    text-decoration: underline;
-    font-size: 40px;
-}
-.viapais{
-    color: azure;
-    font-size: 30px;
-}
-.canal9{
-    color: azure;
-    font-size: 30px;
-}
-.cocinarico{
-    color: azure;
-    font-size: 30px;
-}
-.recetaslider{
-    color: azure;
-    font-size: 30px
-}
-.float{
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  background-color: #25d366;
-  bottom: 40px;
-  right: 40px;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 999;
-}
-.fa-whatsapp{
-  font-size: 60px;
-}
-.float:hover{
-  background-color: #28e76e;
-}
-.social-icons{
+.otrasrecetas{color: black;
   display: flex;
-flex-direction: row-reverse;
-align-items: flex-end;
-justify-content: center;
-  left: 50px;
-  top: 70%;
-  right: 50px;
+  flex-direction: row-reverse;
+align-items: flex-start;
+justify-content: space-around;
+}
+.recetadelaabuela{color: black;
+    font-size: 30px;
+}
+.panqueques{color: black;
+    font-size: 30px;
+}
+.pandulce{color: black;
+    font-size: 30px;
+}
+.bizcochuelo{color: black;
+    font-size: 30px;
 }
 
-.social-icons a{
-display: block;
+header{display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.social-icons2{
+  display: flex;
+  flex-direction: row-reverse;
+align-items: center;
+justify-content: center;
+}
+
+.social-icons2 a{
+  display: flex;
+  flex-direction: row-reverse;
+align-items: center;
+justify-content: center;
   width: 50px;
   height: 50px;
   margin: bottom: 100px;
   background-color: transparent;
 
 }
-.social-icons img{
+.social-icons2 img{display: flex;
+  flex-direction: row-reverse;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.social-icons2 a:hover {
+  transform: scale(1.2);
+}
+.barrio{display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  height: 100px;
+}
+.correo{font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icons a{display: flex;
+  flex-direction: row-reverse;
+align-items: flex-end;
+justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: bottom: 100px;
+  background-color: transparent;
+}
+.social-icons img{display: flex;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 .social-icons a:hover {
   transform: scale(1.2);
+}
+.social-icons{display: flex;
+  flex-direction: row-reverse;
+align-items: flex-end;
+justify-content: center;
+}
+.contain{display: flex;
+  align-items: flex-end;
+justify-content: space-around;
 }
