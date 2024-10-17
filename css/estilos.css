@@ -3,11 +3,42 @@ body {
     background-color: #EE38CD;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../imagenes/paisaje1.jpg)
- }
+    background-image: url(../imagenes/paisaje1.jpg);}
+footer{display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     flex-direction: row;}
+header{display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     flex-direction: row;}
+li{color: black;
+       display: flex;
+       justify-content: center;
+       font-size: 30px;
+       font-family: Arial, Helvetica, sans-serif;}
+img{height: 80%;
+       display: flex;
+      justify-content: center;
+       border-radius: 30;}
+h2{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:25px;}
+nav{color: black;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-around;}
+a:link{color: white;}
+a:visited{color:#9500ff;}
+a:active{color: antiquewhite;
+background-color: pink;}
+a:hover{background-color: violet;
+transform: scale(1.2);}
 .TITULO{color: black;
+font-size: 70px;
   text-decoration: underline;
-  font-size: 70px;
 }
  .messi {color: brown;
     text-decoration: underline;
@@ -34,36 +65,21 @@ body {
     display: flex;
     justify-content: center;
   background-color:  #F5ABE8;}
-li{color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-img{height: 200px;
-    display: flex;
-    justify-content: center;
-    border-radius: 30;
-  }
     .video{color: brown;
         font-size: 40px;
+        margin-bottom: 0%;
         text-decoration: underline;}
 .audio{color: brown;
+  margin-bottom: 0%;
     font-size: 40px;
-    text-decoration: underline;
-}
-h2{
-font-family: Arial, Helvetica, sans-serif;
-font-size:25px;
-
-}
-.otrasrecetas{color: black;
-  display: flex;
-  flex-direction: row-reverse;
-align-items: flex-start;
-justify-content: space-around;
-}
+    text-decoration: underline;}
+.contactos{color: #b44a9b;
+    font-size: 30px;}
+.contactos:visited{color: black;}
+.Contactos:active{color: antiquewhite;
+background-color: pink;}
+.contactos:hover{background-color: violet;
+transform: scale(1.2);}
 .recetadelaabuela{color: black;
     font-size: 30px;
 }
@@ -76,24 +92,17 @@ justify-content: space-around;
 .bizcochuelo{color: black;
     font-size: 30px;
 }
-
-header{display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-}
 .social-icons2{
   display: flex;
   flex-direction: row-reverse;
 align-items: center;
-justify-content: center;
 }
 
 .social-icons2 a{
   display: flex;
   flex-direction: row-reverse;
 align-items: center;
-justify-content: center;
+
   width: 50px;
   height: 50px;
   margin: bottom: 100px;
@@ -103,47 +112,10 @@ justify-content: center;
 .social-icons2 img{display: flex;
   flex-direction: row-reverse;
 align-items: center;
-justify-content: center;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 .social-icons2 a:hover {
   transform: scale(1.2);
-}
-.barrio{display: flex;
-  justify-content: flex-start;
-  width: 60%;
-  height: 100px;
-}
-.correo{font-size: 30px;
-  display: flex;
-  justify-content: flex-end;
-}
-.social-icons a{display: flex;
-  flex-direction: row-reverse;
-align-items: flex-end;
-justify-content: center;
-  width: 50px;
-  height: 50px;
-  margin: bottom: 100px;
-  background-color: transparent;
-}
-.social-icons img{display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-.social-icons{display: flex;
-  flex-direction: row-reverse;
-align-items: flex-end;
-justify-content: center;
-}
-footer{display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-justify-content: space-around;
 }
