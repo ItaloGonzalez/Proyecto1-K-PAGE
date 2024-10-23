@@ -127,3 +127,26 @@ align-items: center;
 background-color: pink;}
 .correo:hover{background-color: violet;
 transform: scale(1.2);}
+.foto2{height: 80%;
+       display: flex;
+      justify-content: center;
+       border-radius: 30;}
+@media (max-width:500px) {
+  .foto{
+    display: none;
+  }}
+@media (max-width:500px) {
+  body{
+    background-image: url(../imagenes/paisaje2.jpg);
+  }}
+  @media (min-width:100px){
+  .foto2{display: none;}}
+  @media (min-width:100px) {
+    .Vestimenta{display: none;}
+  }
+.Vestimenta{
+  color: brown;
+      font-size: 40px;
+      margin-bottom: 0%;
+      text-decoration: underline;}
+}
