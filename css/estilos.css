@@ -41,6 +41,11 @@ transform: scale(1.2);}
 font-size: 70px;
   text-decoration: underline;
 }
+.liry{display:flex;
+  justify-content: center;
+}
+.boton{display:flex;
+justify-content: center;}
  .messi {color: brown;
     text-decoration: underline;
     font-size: 50px;
@@ -67,10 +72,14 @@ font-size: 70px;
     justify-content: center;
   background-color:  #764a6ea1;}
     .video{color: brown;
+      display:flex;
+      justify-content: center;
         font-size: 40px;
         margin-bottom: 0%;
         text-decoration: underline;}
 .audio{color: brown;
+  display: flex;
+  justify-content: center;
   margin-bottom: 0%;
     font-size: 40px;
     text-decoration: underline;}
@@ -142,11 +151,9 @@ transform: scale(1.2);}
   @media (min-width:100px){
   .foto2{display: none;}}
   @media (min-width:100px) {
-    .Vestimenta{display: none;}
-  }
-.Vestimenta{
+    .Vestimenta{display: none;
   color: brown;
+    margin-bottom: 0%;
       font-size: 40px;
-      margin-bottom: 0%;
       text-decoration: underline;}
 }
