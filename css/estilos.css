@@ -148,9 +148,9 @@ transform: scale(1.2);}
   body{
     background-image: url(../imagenes/paisaje2.jpg);
   }}
-  @media (min-width:100px){
+  @media (min-width:499px){
   .foto2{display: none;}}
-  @media (min-width:100px) {
+  @media (min-width:499px) {
     .Vestimenta{display: none;
   color: brown;
     margin-bottom: 0%;
