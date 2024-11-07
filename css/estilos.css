@@ -1,9 +1,7 @@
 body {
     background-attachment:fixed;
-    background-color: #EE38CD;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../imagenes/paisaje1.jpg);}
+    background-color: #dfb6f399;}
+
 footer{display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
@@ -148,3 +146,27 @@ transform: scale(1.2);}
   body{
     background-image: url(../imagenes/paisaje2.jpg);
   }}
+.información{
+  display: flex;
+   margin-top: 18px;
+   height: 20%;
+   border: none;
+   outline: none;
+   color: black;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: #5b4a68ab;
+}
+.dark{
+    border: none;
+    border-radius: 1PX;
+    color:#000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.dark:hover{
+    font-size: 1.3rem;
+}
