@@ -1,15 +1,24 @@
 body {
+    background-repeat:no-repeat;
+  background-size: cover;
     background-attachment:fixed;
     background-color: #dfb6f399;}
-
 footer{display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
-     flex-direction: row;}
+     flex-direction: row;
+      background: #333;
+      color: #fff;
+      left: 0;
+      right: 0;
+      bottom: 0; /* Fija el footer al fondo */
+  }
 header{display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
-     flex-direction: row;}
+     flex-direction: row;
+     margin-top: 50px;
+   }
 li{color: black;
        display: flex;
        background-color: #ff003329;
@@ -25,17 +34,23 @@ h2{
      font-size:25px;}
 nav{color: black;
        display: flex;
+       margin-right: 20px;
+       margin-left: 20px;
        flex-wrap: wrap;
        flex-direction: row;
      align-items: flex-start;
      justify-content: space-around;}
-a:link{color: black;}
-a:visited{color:black;}
+a:link{color:YELLOW;}
+a:visited{color:violet;}
 a:active{color: antiquewhite;
-background-color: pink;}
-a:hover{background-color: violet;
+background-color: green;}
+a:hover{background-color: antiquewhite;
 transform: scale(1.2);}
 .TITULO{color: black;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 font-size: 70px;
   text-decoration: underline;
 }
@@ -51,11 +66,10 @@ justify-content: center;}
     justify-content: center;
 }
 .lool{color: brown;
-    text-decoration: underline;
     display: flex;
     justify-content: center;
     font-size: 40px;
-
+    text-decoration: underline;
 }
 .locura{color: brown;
     text-decoration: underline;
@@ -69,6 +83,11 @@ justify-content: center;}
     display: flex;
     justify-content: center;
   background-color:  #764a6ea1;}
+.info2{color: black;
+    font-size: 36px;
+      display: flex;
+      justify-content: center;
+    background-color:  #764a6ea1;}
     .video{color: brown;
       display:flex;
       justify-content: center;
@@ -81,12 +100,12 @@ justify-content: center;}
   margin-bottom: 0%;
     font-size: 40px;
     text-decoration: underline;}
-.contactos{color:#2c238a;
+.contactos{color:yellow;
     font-size: 30px;}
-.contactos:visited{color: black;}
+.contactos:visited{color: violet;}
 .contactos:active{color: antiquewhite;
-background-color: pink;}
-.contactos:hover{background-color: violet;
+background-color: green;}
+.contactos:hover{background-color: antiquewhite;
 transform: scale(1.2);}
 .recetadelaabuela{color: black;
     font-size: 30px;
@@ -144,12 +163,12 @@ transform: scale(1.2);}
   }}
 @media (max-width:500px) {
   body{
-    background-image: url(../imagenes/paisaje2.jpg);
+    background-color: VIOLET;
   }}
 .información{
   display: flex;
-   margin-top: 18px;
-   height: 20%;
+   margin-top: 30px;
+   height: 30%;
    border: none;
    outline: none;
    color: black;
@@ -157,16 +176,139 @@ transform: scale(1.2);}
    font-weight: 500;
    border-radius: 10px;
    cursor: pointer;
-   background-color: #5b4a68ab;
 }
-.dark{
-    border: none;
-    border-radius: 1PX;
-    color:#000000;
-    font-size: 1.2rem;
-    font-weight: 500;
+.dark {
+    position: fixed; /* Permite fijar el botón en la ubicación especificada */
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    right: 20px; /* Distancia desde la derecha de la ventana */
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #555; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-.dark:hover{
-    font-size: 1.3rem;
+.dark:hover {
+    background-color: #777; /* Color de fondo al pasar el mouse */
+}
+.volveralheader3{background-color: #BB8FCE;
+  display: flex;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   height: 30%;
+   border: none;
+   outline: none;
+   color: #17202A;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.volveralheader1{background-color: #BB8FCE;
+  display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   height: 5%;
+   border: none;
+   outline: none;
+   color: #17202A;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.volveralheader100{background-color: #BB8FCE;
+  display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   height: 5%;
+   border: none;
+   outline: none;
+   color: #17202A;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.volveralheader200{background-color: #BB8FCE;
+  display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   height: 5%;
+   border: none;
+   outline: none;
+   color: #17202A;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.volveralheader2{background-color:#BB8FCE;
+  display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   height: 5%;
+   border: none;
+   outline: none;
+   color: #17202A;
+   font-size: 1.2rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.ira{display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-around;}
+.scrollreceta{color: #8B3BA9;
+  background-color: #EBDEF0;
+  height: 5%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.scrollingredientes{color: #8B3BA9;
+  height: 5%;
+  background-color: #EBDEF0;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.scrollprocedimientos{color: #8B3BA9;
+  height: 5%;
+  background-color: #EBDEF0;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.scrollaside{color: #8B3BA9;
+  height: 5%;
+  border: none;
+  outline: none;
+  background-color: #EBDEF0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.scrollfooter{color: #8B3BA9;
+  height: 5%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #EBDEF0;
 }
