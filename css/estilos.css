@@ -40,8 +40,10 @@ nav{color: black;
        flex-direction: row;
      align-items: flex-start;
      justify-content: space-around;}
-a:link{color:YELLOW;}
-a:visited{color:violet;}
+a:link{color:#70B267 ;
+ font-family: Arial, Helvetica, sans-serif
+}
+a:visited{color:#6E6E6E ;}
 a:active{color: antiquewhite;
 background-color: green;}
 a:hover{background-color: antiquewhite;
@@ -100,9 +102,11 @@ justify-content: center;}
   margin-bottom: 0%;
     font-size: 40px;
     text-decoration: underline;}
-.contactos{color:yellow;
-    font-size: 30px;}
-.contactos:visited{color: violet;}
+.contactos{color:#70B267 ;
+    font-size: 30px;
+     font-family: Arial, Helvetica, sans-serif
+  }
+.contactos:visited{color: #6E6E6E;}
 .contactos:active{color: antiquewhite;
 background-color: green;}
 .contactos:hover{background-color: antiquewhite;
