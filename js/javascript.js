@@ -42,35 +42,11 @@ document.getElementById('scrollprocedimientos').addEventListener('click', functi
     const locura = document.getElementById('locura');
     locura.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
 });
-document.getElementById('scrollaside').addEventListener('click', function() {
-    const aside = document.getElementById('aside');
-    aside.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+document.getElementById('scrollsection').addEventListener('click', function() {
+    const section = document.getElementById('section');
+    section.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
 });
 document.getElementById('scrolltopfooter').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-document.getElementById('scrolltopmain').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-document.getElementById('scrolltopaside').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-document.getElementById('scrolltopmain100').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-document.getElementById('scrolltopmain200').addEventListener('click', function() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'

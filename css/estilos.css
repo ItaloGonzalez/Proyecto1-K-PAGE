@@ -2,7 +2,8 @@ body {
     background-repeat:no-repeat;
   background-size: cover;
     background-attachment:fixed;
-    background-color: #dfb6f399;}
+    background-color: #dfb6f399;
+  }
 footer{display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
@@ -13,6 +14,21 @@ footer{display: flex;
       right: 0;
       bottom: 0; /* Fija el footer al fondo */
   }
+.aside1{display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.aside2{display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}  
+.aside3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 header{display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
@@ -24,7 +40,10 @@ li{color: black;
        background-color: #ff003329;
        justify-content: center;
        font-size: 30px;
-       font-family: Arial, Helvetica, sans-serif;}
+        font-family: "Bokor", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
 img{height: 80%;
        display: flex;
       justify-content: center;
@@ -50,17 +69,33 @@ a:hover{background-color: antiquewhite;
 transform: scale(1.2);}
 .TITULO{color: black;
   display: flex;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
 font-size: 70px;
   text-decoration: underline;
 }
-.liry{display:flex;
-  justify-content: center;
+.video{font-size: 2.4rem;
+  margin-right: 6rem;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: brown;
 }
-.boton{display:flex;
-justify-content: center;}
+.audio{font-size: 2.4rem;
+  margin-right:  11rem;
+  margin-bottom: -10rem;
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: brown;
+}
+.boton{
+  margin-top: 8rem;
+}
  .messi {color: brown;
     text-decoration: underline;
     font-size: 50px;
@@ -90,18 +125,6 @@ justify-content: center;}
       display: flex;
       justify-content: center;
     background-color:  #764a6ea1;}
-    .video{color: brown;
-      display:flex;
-      justify-content: center;
-        font-size: 40px;
-        margin-bottom: 0%;
-        text-decoration: underline;}
-.audio{color: brown;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0%;
-    font-size: 40px;
-    text-decoration: underline;}
 .contactos{color:#70B267 ;
     font-size: 30px;
      font-family: Arial, Helvetica, sans-serif
@@ -183,8 +206,8 @@ transform: scale(1.2);}
 }
 .dark {
     position: fixed; /* Permite fijar el botón en la ubicación especificada */
-    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
-    right: 20px; /* Distancia desde la derecha de la ventana */
+    bottom: 30px; /* Distancia desde la parte inferior de la ventana */
+    left: 30px; /* Distancia desde la derecha de la ventana */
     padding: 10px 20px; /* Tamaño del botón */
     background-color: #555; /* Color de fondo */
     color: white; /* Color del texto */
@@ -192,74 +215,30 @@ transform: scale(1.2);}
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
-
+.dark i{
+  display: flex;
+  flex-direction: row-reverse;
+align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .dark:hover {
     background-color: #777; /* Color de fondo al pasar el mouse */
 }
-.volveralheader3{background-color: #BB8FCE;
-  display: flex;
-   margin-top: 30px;
-   margin-bottom: 50px;
-   height: 30%;
-   border: none;
-   outline: none;
-   color: #17202A;
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
+.volveralheader3{ position: fixed; /* Permite fijar el botón en la ubicación especificada */
+  bottom: 30px; /* Distancia desde la parte inferior de la ventana */
+  right: 30px; /* Distancia desde la derecha de la ventana */
+  padding: 10px 20px; /* Tamaño del botón */
+  background-color: #d662bd; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
-.volveralheader1{background-color: #BB8FCE;
-  display: flex;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   height: 5%;
-   border: none;
-   outline: none;
-   color: #17202A;
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
-}
-.volveralheader100{background-color: #BB8FCE;
-  display: flex;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   height: 5%;
-   border: none;
-   outline: none;
-   color: #17202A;
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
-}
-.volveralheader200{background-color: #BB8FCE;
-  display: flex;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   height: 5%;
-   border: none;
-   outline: none;
-   color: #17202A;
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
-}
-.volveralheader2{background-color:#BB8FCE;
-  display: flex;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   height: 5%;
-   border: none;
-   outline: none;
-   color: #17202A;
-   font-size: 1.2rem;
-   font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
+
+.volveralheader3:hover {
+  background-color: #9e2c6f; /* Color de fondo al pasar el mouse */
 }
 .ira{display: flex;
        flex-wrap: wrap;
@@ -296,7 +275,7 @@ transform: scale(1.2);}
   border-radius: 10px;
   cursor: pointer;
 }
-.scrollaside{color: #8B3BA9;
+.scrollsection{color: #8B3BA9;
   height: 5%;
   border: none;
   outline: none;
@@ -315,4 +294,15 @@ transform: scale(1.2);}
   border-radius: 10px;
   cursor: pointer;
   background-color: #EBDEF0;
+}
+.formulario{display: flex;
+  justify-content: center;
+}
+.forms{display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: brown;
 }
