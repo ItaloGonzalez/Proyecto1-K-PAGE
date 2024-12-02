@@ -1,1 +1,1 @@
-Swal.fire("¡Gracias por entrar a mi 1ª página!");
+Swal.fire("¡¡¡Entraste a K-PAGE!!!");
