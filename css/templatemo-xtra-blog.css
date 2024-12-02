@@ -606,7 +606,7 @@ a:hover figcaption { color: #056767; }
 }
 
 .volveralheader3{ position: fixed; /* Permite fijar el botón en la ubicación especificada */
-  width: 4%;
+  width: 6%;
   bottom: 5rem; /* Distancia desde la parte inferior de la ventana */
   right: 1rem; /* Distancia desde la derecha de la ventana */
   padding: 0.1rem 0.2rem; /* Tamaño del botón */
