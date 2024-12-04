@@ -41,7 +41,8 @@ hr {
 }
 
 .TITULO1 {color: #0CC;
-    margin-top: 0rem;
+ text-decoration: underline;
+ margin-top: 0rem;
  font-weight: 1000;
  font-size: 5rem;
 }
@@ -333,7 +334,7 @@ figcaption { line-height: 1.4; }
 
 .tm-post-full { max-width: 600px; }
 
-.tm-post-sidebar {
+.tm-post-sidebar {margin-top: 4rem;
     max-width: 280px;
     margin-left: 7rem;
     margin-right: -5rem;
@@ -583,27 +584,52 @@ a:hover figcaption { color: #056767; }
 }
 
 
-.artist-list {display: flex;
-  flex-wrap: wrap;
+.artist-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    grid-template-rows: repeat(7, auto);    /* 7 filas, ajuste automático de tamaño */
-    gap: 10px;                               /* Espacio entre elementos */
-    padding: 0;                              /* Sin padding por defecto */
-    list-style-type: none;                   /* Sin viñetas */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas por defecto */
+    gap: 10px; /* Espacio entre elementos */
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
 }
 
-.artist-list li {color: #fffbfb;
-    border: 1px solid #8bc3cd;                  /* Bordes opcionales */
-    padding: 10px;                          /* Espaciado interno */
-    text-align: center;                     /* Centrar texto */
-    background: #65bbca;                    /* Fondos opcionales */
-    transition: background 0.3s;            /* Suave cambio de fondo en hover */
+.artist-list li {
+    color: black;
+    border: 1px solid #8bc3cd; /* Bordes opcionales */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    background: #65bbca; /* Fondos opcionales */
+    transition: background 0.3s; /* Suave cambio de fondo en hover */
 }
 
 .artist-list li:hover {
-    background: #27bcff;                    /* Cambio de fondo al pasar el mouse */
+    background: #27bcff; /* Cambio de fondo al pasar el mouse */
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .artist-list {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    }
+}
+
+@media (max-width: 992px) {
+    .artist-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .artist-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+@media (max-width: 576px) {
+    .artist-list {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}
+
 
 .volveralheader3{ position: fixed; /* Permite fijar el botón en la ubicación especificada */
   width: 6%;
@@ -689,3 +715,299 @@ body.dark-mode {
 
 .tm-contact-form label { font-size: 1.4rem; }
 .tm-contact-form .form-group { display: flex; }
+
+.yuji-mai-regular {
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jaro {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-hr-lijeva {
+  font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jaro {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.allan-regular {
+  font-family: "Allan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bokor-regular {
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } 
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  .caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .lacquer-regular {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .potta-one-regular {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .francois-one-regular {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  .kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nothing-you-could-do-regular {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bevan-regular {
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rubik-puddles-regular {
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .uncial-antiqua-regular {
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .covered-by-your-grace-regular {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .berkshire-swash-regular {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bungee-shade-regular {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .carousel-inner img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+.carousel-item {
+    height: 500px; /* Establece una altura para el carrusel */
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px; /* Ajusta la altura en pantallas más pequeñas */
+    }
+}
+
+.img-uniform {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 300px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+.tm-search-form {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido al centro */
+    margin-left: 20rem; /* Espacio entre el título y el formulario de búsqueda */
+}
+
+.tm-search-button {
+    background-color: #0CC; /* Color de fondo del botón, igual que el encabezado */
+    border: none; /* Sin borde */
+    color: white; /* Color del icono de búsqueda */
+    padding: 0,1rem; /* Espaciado interno del botón */
+    border-radius: 5rem; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.tm-search-button:hover {
+    background-color: #09b6b6; /* Cambia el color cuando el ratón está sobre el botón */
+}
+
+.tm-search-input {
+    height: 45px; /* Altura del campo de búsqueda */
+    border: 1px solid #0CC; /* Borde del campo de búsqueda */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+.imagenesLOL {
+    width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+.imagenesLOL {
+    height: 500px; /* Establece una altura para el carrusel */
+}
+
+@media (max-width: 768px) {
+    .imagenesLOL {
+        height: 300px; /* Ajusta la altura en pantallas más pequeñas */
+    }
+}
+
+.imagenesLOL {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 27rem; /* Ajusta la altura deseada */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0; /* Esto es necesario para que el contenedor tenga altura 0 y se base en el padding */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Elimina bordes si es necesario */
+}
+
+
+
+
+  
+  
+  
+  
